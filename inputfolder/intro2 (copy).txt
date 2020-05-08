@@ -1,0 +1,5 @@
+Introduced in Elastic Stack 6.5 is the new File Data Visualizer feature. This new feature allows a user to upload a file containing delimited (e.g. CSV), NDJSON or semi-structured text (e.g. log files) where the new Elastic machine learning find_file_structure endpoint will analyse it and report back its findings about the data. This includes a suggested ingest pipeline and mappings which can be used to import the file into elasticsearch from the UI.
+
+The aim of this feature is to enable users who wish to explore their data with Kibana or Machine Learning to easily get small amounts of data into Elasticsearch without having to learn the intricacies of the ingest process.
+
+A great recent example is this blog post by a member of Elastic’s marketing team, who doesn’t have a development background. Using the File Data Visualizer he was easily able to import earthquake data into Elasticsearch to help him explore and analyse earthquake locations using geo_point visualizations in Kibana. 
